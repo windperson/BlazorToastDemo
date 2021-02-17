@@ -1,0 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.BlazorToastDemo.iml
+# Datasource local storage ignored files
+/../../../../../../:\repo\BlazorToastDemo\.idea\.idea.BlazorToastDemo\.idea/dataSources/
+/dataSources.local.xml

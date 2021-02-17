@@ -1,0 +1,41 @@
+﻿@page "/"
+@inject IToastService ToastService
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<h1>Toast Demo</h1>
+
+Demo 4 kindes of toasting UI:
+<br/>
+<button class="btn btn-info" @onclick="ShowInfo">Info Toast</button>
+<button class="btn btn-success" @onclick="ShowSuccess">Success Toast</button>
+<button class="btn btn-warning" @onclick="ShowWarning">Warning Toast</button>
+<button class="btn btn-danger" @onclick="ShowError">Error Toast</button>
+
+<SurveyPrompt Title="How is Blazor working for you?"/>
+
+@code {
+
+    private void ShowInfo()
+    {
+        ToastService.ShowInfo("This is Info message");
+    }
+
+    private void ShowSuccess()
+    {
+        ToastService.ShowSuccess("This is success message");
+    }
+
+    private void ShowWarning()
+    {
+        ToastService.ShowWarning("This is warning message");
+    }
+
+    private void ShowError()
+    {
+        ToastService.ShowError("This is error message");
+    }
+
+}
